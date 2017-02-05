@@ -1,0 +1,39 @@
+\documentclass[aps,12pt,nobalancelastpage,amsmath,amssymb,
+nofootinbib]{revtex4}
+
+\usepackage{graphics}      % standard graphics specifications
+\usepackage{graphicx}      % alternative graphics specifications
+\usepackage{longtable}     % helps with long table options
+\usepackage{url}           % for on-line citations
+\usepackage{bm}            % special 'bold-math' package
+\usepackage{array}   
+\usepackage{float}
+
+\usepackage{fancyhdr}
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\cfoot{\thepage}
+\pagestyle{fancy}
+
+\begin{document}
+The two's compliment is a convenient way to store negative numbers for mathematical operations. The two's compliment for a positive number is itself. To find the two's compliment of a negative number $-x$, subtract one from $x$ then bit invert the result. I am using 16 bits to represent each number.\\\\
+A$)$ $10\rightarrow 10$\\\\
+B$)$ $436\rightarrow 436$\\\\
+C$)$ $1024\rightarrow 1024$\\\\
+D$)$ $-13$\\
+$13-1=12$\\
+$12\rightarrow 0000000000001100$\\
+$\sim 0000000000001101=1111111111110011$\\
+$1111111111110011\rightarrow 65523$\\\\
+E$)$ $-1023$\\
+$1023-1=1022$\\
+$1022\rightarrow 0000001111111110$\\
+$\sim 0000001111111110=1111110000000001$\\
+$1111110000000001\rightarrow 64513$\\\\
+F$)$ $-1024$\\
+$1024-1=1023$\\
+$1023\rightarrow 0000001111111111$\\
+$\sim 0000001111111111=1111110000000000$\\
+$1111110000000000\rightarrow 64512$
+
+\end{document}
